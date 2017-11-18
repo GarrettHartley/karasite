@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kara Hartley's Art</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<nav>
+		<a href="#aboutKara">About</a>
+		<a href="#art">Art</a>
+		<a href="#contact">Contact</a>
+	</nav>
+	<div class="flexContainer">
+		<div id="aboutKara" class="section">
+		About Kara
+		</div>
+
+
+
+		<div id="art" class="section">
+		     <div class="picture-and-summary">
+			    <div class="img-container">
+			    	<div class="img" id="img1"></div>
+			    </div>
+			    <div>this is about the FIRST picture</div>
+		     </div>
+		     <div class="picture-and-summary">
+			    <div class="img-container">
+			    	<div class="img" id="img2"></div>
+			    </div>
+			    <div>this is about the Second picture</div>
+		     </div>
+		     <div class="picture-and-summary">
+			    <div class="img-container">
+			    	<div class="img" id="img3"></div>
+			    </div>
+			    <div>this is about the THIRD picture</div>
+		     </div>
+		</div>
+
+
+
+		<div id="contact" class="section">
+			Contact information
+		</div>
+
+	</div>
+<script>
+var fullscreen = function(){
+	console.log('in fullscreen');
+this.classList.toggle('fullscreen');
+}
+
+console.log("hellow world")
+var images = document.querySelectorAll('.img-container');
+for (var i = 0; i < images.length; i++){
+	console.log('image' + i)
+	images[i].addEventListener('click', fullscreen, false);
+}
+
+</script>
+</body>
+</html>

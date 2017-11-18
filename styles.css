@@ -1,0 +1,114 @@
+body{
+    background: rgb(205, 160, 158);
+}
+nav {
+	margin-left: -8px;
+	display: flex;
+	bottom:0px;
+	width:100%;
+	position: fixed;
+	justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: lightgray;
+    width: 16.66%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    display:inline-block;
+    margin: 0px;
+}
+
+div {
+}
+
+nav a:nth-child(1){
+	background-color:gray;
+}
+nav a:nth-child(2){
+	background-color:darkgray;
+}
+nav a:nth-child(3){
+	background-color:gray;
+}
+
+a:hover {
+    color: black;
+}
+
+.flexContainer{
+	margin-top: 79px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.fullscreen{
+    z-index:1000;
+    width:100%;
+    max-width: 100%;
+    height:100% !important;
+    position:fixed;
+    top:0px;
+    left:0px;
+    background-color:gray;
+}
+
+#img1{
+    background: url("images/anatomy.JPG") no-repeat center center;
+    background-size: contain;
+}
+#img2{
+    background: url("images/ink4.png") no-repeat center center;
+    background-size: contain;
+}
+#img3{
+    background: url("images/watercolor.png") no-repeat center center;
+    background-size: contain;
+}
+
+
+.img-container{
+    width:100%;
+    height:400px;
+    cursor: pointer;
+}
+
+.fullscreen .img{
+    max-height:100%;
+    height:100%;
+}
+
+.img{
+    width:100%;
+    height:25%; 
+}
+
+img {
+	max-width: 100%;
+    height:auto;
+    pointer-events: none;
+}
+
+.section {
+    FLEX-GROW: 1;
+}
+
+.section {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.picture-and-summary {
+    /* width: 100%; */
+    justify-content: inherit;
+    align-items: inherit;
+    display: inherit;
+    flex-direction: inherit;
+}
